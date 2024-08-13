@@ -13,7 +13,7 @@ Food Delivery Business Profitability Analysis
     Clone the Repository
     
          ```sh
-         git clone https://github.com/username/BusinessProfitabilityAnalysis.git
+           git@github.com:CalmDeveloper111/ProfitAnalyzer.git      
          ```    
 **Usage:**
 
