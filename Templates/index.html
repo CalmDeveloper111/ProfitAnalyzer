@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <link rel="stylesheet" href = "{% static "index.css" %}">
+</head>
+<body>
+    <div id="main_section">
+        <img src="https://sabiogroup.com/sites/default/files/2021-08/shutterstock_1328946722.jpg" alt="image">
+        <div id="form_submit">
+            <form action="analysis" method="POST" enctype="multipart/form-data"> {% csrf_token %}
+                <input type="file" name="file">
+                <input type="submit" name="button" id="">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>

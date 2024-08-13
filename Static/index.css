@@ -1,0 +1,27 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vh;
+    background-color: antiquewhite;
+}
+
+#main_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: cadetblue;
+    height: 35vh;
+    width: auto;
+}
+
+/* #form_submit {
+    display: flex;
+    flex-direction: column;
+} */
+
+img {
+    height: 70%;
+    width: 65%;
+}

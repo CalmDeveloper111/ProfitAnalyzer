@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        table {
+            width: fit-content;
+            border-collapse: collapse;
+        }
+
+        table , th ,td {
+            border: 1px solid black;
+            margin: 5px;
+        }
+
+        th,td {
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: azure;
+        }
+
+        #cost_break_down {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+            height: fit-content;
+            margin-top: 0;
+        }
+
+        #break_outer_div {
+            width: 100vw;
+            margin-top: 5rem;
+        }
+
+        #break_inner_div {
+            width: 100vw;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+        }
+
+        #pie_img {
+            width: 75%;
+            margin-top: 10%;
+        }
+
+        #hist {
+            height: auto;
+            width: 100vw;
+        }
+
+        #hist_img {
+            width: 100vw;
+            height: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div id="overall_metrics">
+        <h1>Overall Metrics</h1>
+        {{overall_metrics_result|safe}}
+    </div>
+     
+    <div id="cost_break_down">
+        
+       <div id="break_outer_div"> <h1>Total Cost Break Down</h1>
+        {{cost_break_down_result|safe}} </div>
+
+        <div id="break_inner_div"> <div id="pie_chart">
+            <!-- <h1>Total cost break down</h1> -->
+    
+            <img id="pie_img" src="data:img/png;base64,{{piechart_cost_break_down}}" alt="">
+        </div></div>
+
+    </div>
+
+    <div id="hist">
+        <h1>Total profit per order </h1>
+
+        <img id="hist_img" src="data:img/png;base64,{{hist_total_profit_per_order}}" alt="">
+        <!-- {{hist_total_profit_per_order|safe}} -->
+    </div>
+
+    
+    
+</body>
+</html>
