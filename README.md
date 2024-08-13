@@ -1,10 +1,10 @@
 **Project Title:** 
 
-Business Profitability Analysis 
+Food Delivery Business Profitability Analysis 
 
 **Description:**
 
-**Business Profitability Analysis** is a project designed to offer comprehensive insights into business financial performance. It includes features for analyzing profitability metrics and providing a detailed breakdown of total costs to support strategic decision-making and cost management.
+ this project is designed to offer comprehensive insights into food delivery business financial performance. It includes features for analyzing profitability metrics and providing a detailed breakdown of total costs to support strategic decision-making and cost management.
 
 **Table of Contents:**
 
